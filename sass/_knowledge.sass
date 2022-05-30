@@ -1,0 +1,127 @@
+.knowledge
+    padding: 72px 0
+    @media (min-width: 1199px)
+        padding: 72px 0 110px 0
+    &__subtitle
+        margin-top: 30px
+        font-weight: 450
+        font-size: 16px
+        line-height: 20px
+        color: $mainTextColor
+        @media (min-width: 1199px)     
+            font-size: 18px
+            line-height: 22px
+    &__level
+        padding: 6px 12px
+        margin-top: 32px
+        width: 300px
+        height: 56px
+        background: linear-gradient(286.41deg, #093F56 3.63%, #0B3136 90.98%)
+        border-radius: 6px
+        cursor: pointer
+        @media (min-width: 420px)
+            width: 100%    
+    &__block__lvl
+        margin-left: 43px  
+        position: relative
+        @media (min-width: 576px)
+            display: flex
+            align-items: center
+        &::before
+            content: '' 
+            position: absolute 
+            top: 5px
+            left: -26px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background: linear-gradient(180deg, #00E0FF 0%, #4A8BEC 100%)
+            box-shadow: 0px 4px 8px rgba(0, 224, 255, 0.56)
+    &__img
+        display: flex
+        justify-content: center
+        align-items: center 
+        position: absolute
+        width: 32px
+        height: 32px 
+        top: 5px
+        right: 5px    
+        background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%)
+        border-radius: 6px    
+    &__photo
+        width: 20px
+        height: 15px
+        &-disabled
+            transform: rotate(180deg)
+    &__header, &__text
+        font-weight: 750
+        font-size: 20px
+        line-height: 21px
+        color: $mainTextColor 
+    &__text
+        font-weight: 450
+        font-size: 15px
+        color: #08B1B9
+        margin-left: 5px
+    &__menu
+	    counter-reset: num
+    &__menu
+        display: none    
+    .active
+        display: block
+    &__list
+        padding: 0 35px
+        position: relative
+        list-style-position: inside
+        margin-top: 22px
+        @media (min-width: 1199px)
+            margin-top: 40px
+        &::before
+            content: counter(num) 
+            counter-increment: num
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            top: 0
+            left: -8px
+            width: 25px
+            height: 25px
+            border-radius: 50%
+            background: $secondTextColor
+            color: #08262B
+            font-weight: 750
+            font-size: 14px
+            line-height: 21px   
+    &__list-header
+        font-weight: 750
+        font-size: 14px
+        line-height: 21px
+        color: $secondTextColor
+        @media (min-width: 576px)
+            font-size: 16px
+        @media (min-width: 991px)
+            font-size: 18px
+    &__list-text
+        background: linear-gradient(180deg, #FFFFFF 64.06%, rgba(255, 255, 255, 0) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        margin-top: 14px  
+        font-weight: 450
+        font-size: 14px
+        line-height: 21px
+        @media (min-width: 576px)
+            font-size: 16px
+        @media (min-width: 991px)
+            font-size: 18px          
+
+
+
+
+
+
+
+
+          
